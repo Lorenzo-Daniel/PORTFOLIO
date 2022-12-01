@@ -1,0 +1,43 @@
+.form-input {
+  border: 1px solid #4040405d;
+  height: 56px;
+  width: 100%;
+  border-radius: 5px;
+  padding-left: 5px;
+  &:focus {
+    outline: none;
+    border: 1px solid $mainColor;
+  }
+}
+.form-input-invalid {
+  @extend .form-input;
+  border-color: red;
+}
+textarea::placeholder {
+  font-size: 12px;
+  padding-top: 3px;
+}
+.label-input{
+position: absolute;
+padding-top:3px ;
+margin-bottom: 5px;
+padding-left:10px ;
+font-size: 12px;
+color:#404040ad ;
+}
+
+.requiredField {
+  position: absolute;
+  font-size: 14px;
+  color: rgba(255, 0, 0, 0.781);
+}
+@media (min-width: 320px) {
+  .textarea {
+    height: 135px;
+  }
+}
+@media (min-width: 768px) {
+  .textarea {
+    width: 93%;
+  }
+}

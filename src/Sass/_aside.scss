@@ -1,0 +1,19 @@
+@media (min-width: 320px) {
+  .aside {
+    border-right: 1px solid black;
+    position: fixed;
+    display: flex;
+    height: 100%;
+    width: 25%;
+    padding-top: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      border-radius: 100%;
+    }
+    .aside_icons {
+      font-size: 40px;
+    }
+  }
+}

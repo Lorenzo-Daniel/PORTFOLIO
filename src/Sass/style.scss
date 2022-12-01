@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import "_variables.scss";
+@import "_mainContainer.scss";
+@import "_aside.scss";
+@import "_form.scss";
+@import "_footer.scss";
+@import "_popUpMainContent.scss";
+@import "_popUpCurriculum.scss";
+
+p {
+  color: #404040;
+  font-family: "Montserrat", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+  color: #404040;
+}
+input[type="submit"],
+button {
+  background-color: $mainBgColor;
+  border: none;
+  height: 40px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  border-radius: 5px;
+  padding: 0px 10px;
+  color: $mainColor;
+  &:hover {
+    background-color: $mainColor;
+    color: white;
+  }
+  &:disabled{
+    background-color: #22989613;
+    color: $mainColor;
+    cursor: default;
+  }
+}

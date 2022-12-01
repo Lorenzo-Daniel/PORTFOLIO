@@ -1,0 +1,56 @@
+.main_container {
+  overflow: scroll;
+}
+.fa-html5 {
+ color: #e54c21;
+}
+.fa-css3-alt {
+  color:#214ce5
+}
+.fa-react {
+  color:#61dbfb
+}
+.main_item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  p {
+    padding: 10px;
+    margin: 0px;
+  }
+  b{
+    font-family: "Roboto", sans-serif;
+    color: #404040;
+    text-transform: uppercase;
+  }
+
+  .icon_container {
+    background-color: $mainBgColor;
+    padding: 30px;
+    border-radius: 1000px;
+    i {
+      font-size: 40px;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      color: $mainColor;
+    }
+    &:hover {
+      background-color: $mainColor;
+      cursor: pointer;
+      i {
+        color: white;
+      }
+    }
+  }
+  .icon_containerNoHover {
+    @extend .icon_container;
+    &:hover {
+      background-color:$mainBgColor;
+      cursor: initial;
+      i{
+        color: $mainColor;
+      }
+    }
+  }
+}

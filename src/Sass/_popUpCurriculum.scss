@@ -1,0 +1,21 @@
+.popUpCurr_Box {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(18, 20, 18, 0.842);
+  .popUpCurr_Modal {
+    position: relative;
+    overflow: scroll;
+    max-width: 800px;
+    .popUpCurr_img-btn-close {
+      position: absolute;
+      right: 15px;
+      top: 5px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+}
