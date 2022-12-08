@@ -92,7 +92,7 @@ const RainStream = props => {
                 fontSize: 50,
             }}>
             {stream.map((char, index) => (
-                <a
+                <b
                     style={{
                         marginTop: -12,
                         // Reduce opacity for last chars
@@ -104,7 +104,7 @@ const RainStream = props => {
                                 : undefined,
                     }}>
                     {char}
-                </a>
+                </b>
             ))}
         </div>
     );

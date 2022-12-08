@@ -1,5 +1,5 @@
 import React from 'react'
-import rubik from '../../../assets/images/adobe2.jpg'
+// import rubik from '../../../assets/images/adobe2.jpg'
 import MatrixRain from '../../Matrix/MatrixRain'
 
 
