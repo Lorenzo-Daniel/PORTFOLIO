@@ -1,5 +1,13 @@
 footer{
     margin-top: 80px;
     background-color: hsla(0, 0%, 90%, 0.507);
+    a{
+        color: #404040;
+        &:hover {
+            color: #505050;
+        }
+    }
 }
+
+
 

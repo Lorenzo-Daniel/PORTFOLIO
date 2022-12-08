@@ -4,18 +4,6 @@
   overflow: scroll;
 }
 
-.fa-html5 {
-  color: #e54c21;
-}
-
-.fa-css3-alt {
-  color: #214ce5;
-}
-
-.fa-react {
-  color: #61dbfb;
-}
-
 .main_item {
   display: flex;
   align-items: center;
@@ -29,9 +17,10 @@
   font-family: "Roboto", sans-serif;
   color: #404040;
   text-transform: uppercase;
+  font-weight: 900;
 }
 .main_item .icon_container, .main_item .icon_containerNoHover {
-  background-color: rgba(34, 152, 150, 0.2392156863);
+  background-color: rgba(34, 152, 150, 0.0862745098);
   padding: 30px;
   border-radius: 1000px;
 }
@@ -50,7 +39,7 @@
   color: white;
 }
 .main_item .icon_containerNoHover:hover {
-  background-color: rgba(34, 152, 150, 0.2392156863);
+  background-color: rgba(34, 152, 150, 0.0862745098);
   cursor: initial;
 }
 .main_item .icon_containerNoHover:hover i {
@@ -59,7 +48,7 @@
 
 @media (min-width: 320px) {
   .aside {
-    border-right: 1px solid black;
+    border-right: 1px solid rgba(64, 64, 64, 0.337254902);
     position: fixed;
     display: flex;
     height: 100%;
@@ -71,9 +60,29 @@
   }
   .aside img {
     border-radius: 100%;
+    background-color: rgba(34, 152, 150, 0.0862745098);
+  }
+  .aside h1 {
+    font-weight: 400;
+    text-transform: uppercase;
   }
   .aside .aside_icons {
     font-size: 40px;
+  }
+  .aside .aside_icons a {
+    color: #404040;
+  }
+  .aside .aside_icons a:hover {
+    color: #505050;
+  }
+  .fa-html5 {
+    color: #e54c21;
+  }
+  .fa-css3-alt {
+    color: #214ce5;
+  }
+  .fa-react {
+    color: #61dbfb;
   }
 }
 .form-input, .form-input-invalid {
@@ -125,6 +134,12 @@ textarea::placeholder {
 footer {
   margin-top: 80px;
   background-color: hsla(0deg, 0%, 90%, 0.507);
+}
+footer a {
+  color: #404040;
+}
+footer a:hover {
+  color: #505050;
 }
 
 @media (min-width: 320px) {
@@ -248,10 +263,16 @@ footer {
 }
 .popUpCurr_Box .popUpCurr_Modal .popUpCurr_img-btn-close {
   position: absolute;
+  color: white;
   right: 15px;
   top: 5px;
   font-size: 20px;
   cursor: pointer;
+}
+
+.hero .img {
+  max-height: 400px;
+  overflow: hidden;
 }
 
 p {
@@ -267,11 +288,12 @@ h5,
 h6 {
   font-family: "Roboto", sans-serif;
   color: #404040;
+  font-weight: 700;
 }
 
 input[type=submit],
 button {
-  background-color: rgba(34, 152, 150, 0.2392156863);
+  background-color: rgba(34, 152, 150, 0.0862745098);
   border: none;
   height: 40px;
   color: white;

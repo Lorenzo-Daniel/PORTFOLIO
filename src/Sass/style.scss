@@ -7,6 +7,7 @@
 @import "_footer.scss";
 @import "_popUpMainContent.scss";
 @import "_popUpCurriculum.scss";
+@import "_hero.scss";
 
 p {
   color: #404040;
@@ -20,6 +21,7 @@ h5,
 h6 {
   font-family: "Roboto", sans-serif;
   color: #404040;
+  font-weight: 700;
 }
 input[type="submit"],
 button {
@@ -35,7 +37,7 @@ button {
     background-color: $mainColor;
     color: white;
   }
-  &:disabled{
+  &:disabled {
     background-color: #22989613;
     color: $mainColor;
     cursor: default;

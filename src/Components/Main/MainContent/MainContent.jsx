@@ -1,11 +1,9 @@
 import React from 'react'
 
 
-
-
 const MainContent = ({ showPopUpCoder, showPopUpCurriculum }) => {
     return (
-        <div className="mt-5">
+        <section className="mt-5">
             <div className="d-flex flex-column flex-md-row">
                 <div className="main_item d-flex flex-column col-md-6 flex-xxl-row animate__animated animate__fadeInLeft ">
                     <div className="icon_container" onClick={showPopUpCurriculum}>
@@ -59,7 +57,7 @@ const MainContent = ({ showPopUpCoder, showPopUpCurriculum }) => {
                     </div>
                     <p className="text-center text-xxl-start">
                         <b>Lo que busco</b> <br />
-                        ...
+                        Formar parte de un euipo donde pueda aportar ideas, desarrollar mis skills y aprender nuevas tecnologias.
                     </p>
                 </div>
                 <div className="main_item d-flex flex-column col-md-6 flex-xxl-row  animate__animated animate__fadeInRight">
@@ -68,11 +66,12 @@ const MainContent = ({ showPopUpCoder, showPopUpCurriculum }) => {
                     </div>
                     <p className="text-center text-xxl-start">
                         <b>Objetivos</b> <br />
-                        ...
+                        Continuar creciendo profesionalmente. <br />
+                        Actualmente focalizado en tecnologias JS, concretamente React JS, pero tambien incursionar en otras tecnologias y lenguajes.
                     </p>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

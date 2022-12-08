@@ -49,7 +49,6 @@ const Form = () => {
                     form.current.reset();
                     alert('fin del proceso')
                     setChangeBtnValuue(true);
-                    return false
                 }, () => {
                     form.current.reset();
                     alert('fin del proceso que salio mal')

@@ -1,6 +1,6 @@
 @media (min-width: 320px) {
   .aside {
-    border-right: 1px solid black;
+    border-right: 1px solid #40404056;
     position: fixed;
     display: flex;
     height: 100%;
@@ -11,9 +11,29 @@
     align-items: center;
     img {
       border-radius: 100%;
+      background-color: $mainBgColor;
+    }
+    h1 {
+      font-weight: 400;
+      text-transform: uppercase;
     }
     .aside_icons {
+      a {
+        color: #404040;
+        &:hover {
+          color: #505050;
+        }
+      }
       font-size: 40px;
     }
+  }
+  .fa-html5 {
+    color: #e54c21;
+  }
+  .fa-css3-alt {
+    color: #214ce5;
+  }
+  .fa-react {
+    color: #61dbfb;
   }
 }

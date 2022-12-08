@@ -5,7 +5,7 @@ import MainContent from './MainContent/MainContent'
 import Form from './Form/Form'
 import Footer from '../Footer/Footer';
 import PopUpCoder from './PopUpCoder/PopUpCoder'
-import PopUpCurriculum from './PdfViewer/PopUpCurriculum'
+import PopUpCurriculum from './PopUpCurriculum/PopUpCurriculum'
 
 
 
