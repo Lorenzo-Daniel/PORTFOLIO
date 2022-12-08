@@ -72,7 +72,7 @@ const RainStream = props => {
         } else {
             setTopPadding(topPadding + 44);
         }
-        // setStream(stream => [...stream.slice(1, stream.length), getRandChar()]);
+        setStream(stream => [...stream.slice(1, stream.length), getRandChar()]);
         setStream(getMutatedStream);
     }, intervalDelay);
 
@@ -103,7 +103,9 @@ const RainStream = props => {
                                 ? '0px 0px 20px rgba(255, 255, 255, 1)'
                                 : undefined,
                     }}>
-                    {char}
+                        {char}
+                    {/* <i className="fa-solid fa-face-meh"></i> */}
+                    {/* <i className="fa-solid fa-face-laugh"></i> */}
                 </span>
             ))}
         </div>
