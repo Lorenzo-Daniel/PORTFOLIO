@@ -9,10 +9,10 @@ const AsideResp = () => {
                     <img src={dani} width={300} alt="yo" />
                 </div>
                 <div className="d-flex flex-column justify-content-between">
-                    <h1 className='text-center'>Daniel Lorenzo</h1>
-                    <h5 className='text-center'>Desarollador Frontend</h5>
+                    <h2 className='text-center'>Daniel Lorenzo</h2>
+                    <h5 className='text-center mt-2'>Frontend Developer</h5>
                 </div>
-                <div className='d-flex justify-content-evenly mt-5'>
+                <div className='d-flex justify-content-evenly mt-4'>
                     <i className="fa-brands fa-html5 fs-1"></i>
                     <i className="fa-brands fa-css3-alt fs-1"></i>
                     <i className="fa-brands fa-react fs-1"></i>
