@@ -8,6 +8,7 @@
 @import "_popUpMainContent.scss";
 @import "_popUpCurriculum.scss";
 @import "_hero.scss";
+@import "_popUpForm.scss";
 
 p {
   color: #404040;
@@ -41,5 +42,9 @@ button {
     background-color: #22989613;
     color: $mainColor;
     cursor: default;
+  }
+  &:focus{
+    outline: none;
+    border: 1px solid $mainColor;
   }
 }

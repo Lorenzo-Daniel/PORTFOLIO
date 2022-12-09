@@ -66,7 +66,8 @@ const MainContent = ({ showPopUpCoder, showPopUpCurriculum }) => {
                     </div>
                     <p className="text-center text-xxl-start">
                         <b>Objetivos</b> <br />
-                        Profundizar en React JS y aprender nuevas tecnologías.
+                        Profundizar en tecnologías ya incursionadas e incursionar en nuevas tecnologías.
+                        Fortalecer mis conocimientos superando desafíos, aportando ideas y nutrirme de esa experiencia.
                     </p>
                 </div>
             </div>

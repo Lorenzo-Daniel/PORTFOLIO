@@ -275,6 +275,42 @@ footer a:hover {
   overflow: hidden;
 }
 
+.popUpForm-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popUpForm-container .popUpForm-modal {
+  position: relative;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  min-width: 400px;
+  border-radius: 5px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(34, 152, 150, 0.0862745098);
+}
+.popUpForm-container .popUpForm-modal p {
+  text-align: center;
+}
+.popUpForm-container .popUpForm-modal button {
+  max-width: 150px;
+}
+.popUpForm-container .popUpForm-modal i {
+  position: absolute;
+  color: #228896;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
 p {
   color: #404040;
   font-family: "Montserrat", sans-serif;
@@ -312,4 +348,9 @@ button:disabled {
   background-color: rgba(34, 152, 150, 0.0745098039);
   color: #228896;
   cursor: default;
+}
+input[type=submit]:focus,
+button:focus {
+  outline: none;
+  border: 1px solid #228896;
 }/*# sourceMappingURL=style.css.map */

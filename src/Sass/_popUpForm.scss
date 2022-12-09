@@ -1,0 +1,35 @@
+.popUpForm-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .popUpForm-modal {
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    min-width: 400px;
+    border-radius: 5px;
+    box-shadow:  0 .5rem 1rem rgba(0,0,0,.15);
+border: 1px solid $mainBgColor;
+    p{
+        text-align: center;
+    }
+    button{
+        max-width: 150px;
+    }
+    i{
+        position: absolute;
+        color: $mainColor;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+    }
+  }
+}

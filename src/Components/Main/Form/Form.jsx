@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import emailjs from '@emailjs/browser';
+import PopUpForm from './PopUpForm';
 
 const Form = () => {
     const form = useRef();
@@ -12,6 +13,10 @@ const Form = () => {
     const [invalidEmail, setInvalidEmail] = useState(true);
     const [invalidPhone, setInvalidPhone] = useState(true);
     const [invalidMessage, setInvalidMessage] = useState(true);
+    const [showHidePopUp, setShowHidePopUp] = useState(true);
+    const [popUptext, setPopUpText] = useState('')
+
+
     useEffect(() => {
         if (name.length !== 0) {
             setInvalidName(true)
@@ -44,21 +49,26 @@ const Form = () => {
         }
         else {
             setChangeBtnValuue(false);
-            emailjs.sendForm('default_service', 'template_0ra71df', form.current, '32WkBY9c16zRle6EC')
+            emailjs.sendForm('default_service', 'template_0ra71df', form.current, '32WkBY9c16zRle6EC') //C
                 .then(() => {
                     form.current.reset();
-                    alert('fin del proceso')
                     setChangeBtnValuue(true);
+                    setPopUpText({texto1: 'Mensaje enviado correctamente!',texto2: 'Gracias por contactarte!'});
+                    setShowHidePopUp(false)
                 }, () => {
+                    setPopUpText({texto1: 'Ups! Algo salió mal!',texto2: 'Vuelve a intentarlo!'});
+                    setShowHidePopUp(false)
                     form.current.reset();
-                    alert('fin del proceso que salio mal')
                     setChangeBtnValuue(true);
                 });
         }
     }
 
+    const closPopoUpForm = () => {
+        setShowHidePopUp(true)
+    }
     return (
-        <div className='form'>
+        <div className='form position-relative'>
             <h2>Contacto</h2>
             <form className='d-flex flex-column gap-4 flex-md-row' ref={form} onSubmit={validarCampos}>
                 <div className="col-md-6 d-flex flex-column gap-4">
@@ -128,6 +138,7 @@ const Form = () => {
                     </div>
                 </div>
             </form>
+            <PopUpForm visibility={showHidePopUp} closePopUpForm={closPopoUpForm} text={popUptext}/>
         </div>
     )
 }
