@@ -16,10 +16,10 @@ const Hero = () => {
           }}
         />
       </div>
-      <h1 className="mt-4 text-center">Aboue Me</h1>
+      <h1 className="mt-4 text-center">About Me</h1>
       <p className="text-center">
-        I am a person with a high degree of responsibility, commitment, interest
-        and enthusiasm to develop in the IT world.
+      I am a person with a high degree of responsibility, commitment, interest and enthusiasm in pursuit of development and growth in IT world.
+
       </p>
     </section>
   );

@@ -36,7 +36,7 @@ const MainContent = ({ showPopUpCoder, showPopUpCurriculum }) => {
           </div>
           <p className="text-center text-xxl-start">
             <b>Certificates</b> <br />
-            View the study certificates that complete my Frontend profile.
+            Consider the study certificates that complete my Frontend profile.
           </p>
         </div>
         <div className="main_item d-flex flex-column col-md-6 flex-xxl-row animate__animated animate__fadeInRight">
@@ -78,7 +78,8 @@ const MainContent = ({ showPopUpCoder, showPopUpCurriculum }) => {
             <b>Goals</b> <br />
             Delve into technologies already explored and venture into new
             technologies. Strengthen my knowledge by overcoming challenges,
-            contributing ideas and nourishing myself from that experience.
+            contributing ideas improving through the experience.
+
           </p>
         </div>
       </div>
