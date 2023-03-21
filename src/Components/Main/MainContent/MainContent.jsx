@@ -51,7 +51,7 @@ const MainContent = ({ showPopUpCoder, showPopUpCurriculum }) => {
           </a>
           <p className="text-center text-xxl-start">
             <b>Freelance projects</b> <br />
-            Take a look at my latest Freelance project
+            Take a look at my latest Freelance project.
           </p>
         </div>
       </div>
@@ -67,7 +67,7 @@ const MainContent = ({ showPopUpCoder, showPopUpCurriculum }) => {
           <p className="text-center text-xxl-start">
             <b> What I look for</b> <br />
             Being part of a work team that proposes new challenges and allows me
-            to continue developing my skills
+            to continue developing my skills.
           </p>
         </div>
         <div className="main_item d-flex flex-column col-md-6 flex-xxl-row  animate__animated animate__fadeInRight">
