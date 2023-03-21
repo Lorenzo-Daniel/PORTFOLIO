@@ -10,7 +10,7 @@ const Footer = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/daniel-lorenzo-1a2623186/" target={'_blank'} rel={'noreferrer'}>
+                    <a href="https://www.linkedin.com/in/daniel-lorenzo-93318b25a/" target={'_blank'} rel={'noreferrer'}>
                         <i className="fa-brands fa-linkedin fs-1"></i>
                     </a>
                 </li>
@@ -21,7 +21,7 @@ const Footer = () => {
                 </li>
             </ul>
             <p className='mt-4 mb-0 py-1 text-center'>
-                Desarrollado por Daniel Lorenzo
+            Developed by Daniel Lorenzo
             </p>
         </footer>
     )

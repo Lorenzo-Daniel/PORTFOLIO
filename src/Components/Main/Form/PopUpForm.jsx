@@ -11,7 +11,7 @@ const PopUpForm = ({visibility,text,closePopUpForm}) => {
                     {text.texto2}
                 </p>
                 <button onClick={closePopUpForm}>
-                    CERRAR
+                CLOSE
                 </button>
                 <div onClick={closePopUpForm}>
                     <i className='fa-solid fa-close'></i>
