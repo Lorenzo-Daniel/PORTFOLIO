@@ -78,7 +78,7 @@ const MainContent = ({ showPopUpCoder, showPopUpCurriculum }) => {
             <b>Goals</b> <br />
             Delve into technologies already explored and venture into new
             technologies. Strengthen my knowledge by overcoming challenges,
-            contributing ideas improving through the experience.
+            contributing ideas and improving through the experience.
 
           </p>
         </div>
